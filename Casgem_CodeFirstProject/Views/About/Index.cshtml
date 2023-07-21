@@ -1,0 +1,31 @@
+﻿﻿
+@{
+    Layout = null;
+}
+
+<!--
+   Author: W3layouts
+   Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+@Html.Action("PartialHead","Default")
+<body id="home">
+    @Html.Action("PartialNavbar","Default")
+   @Html.Action("PartialSliderScript")
+    <!-- breadcrumbs -->
+    @Html.Action("PartialBreadcrumbs")
+    <!-- breadcrumbs //-->
+   @Html.Action("PartialAbout")
+    
+        <!-- /team-grids -->
+        @Html.Action("PartialTeams")
+        <!-- /team-grids -->
+   
+    @Html.Action("PartialFooter","Default")
+
+   @Html.Action("PartialScript")
+
+</body>
+
+</html>

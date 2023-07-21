@@ -1,0 +1,20 @@
+﻿@model Casgem_CodeFirstProject.DAL.Entities.Hobbies
+@{
+    ViewBag.Title = "AddService";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<h2>Yeni Hizmet Ekleme Sayfası</h2>
+
+<form method="post">
+    <label>Başlık</label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    <br />
+    <label>Açıklama</label> 
+    @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+    <br /> 
+    <label>Ikon</label> 
+    @Html.TextBoxFor(x => x.Icon, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-dark">Kaydet</button>
+</form>

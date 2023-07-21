@@ -1,0 +1,69 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+<!--
+   Author: W3layouts
+   Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+@Html.Action("PartialHead", "Default")
+<body id="home">
+  
+        <!--header-->
+        @Html.Action("PartialNavbar","Default")
+        <!--/header-->
+   
+   @Html.Action("PartialSliderScript","Default")
+    <!--theme switcher dark and light mode script//-->
+    <!-- breadcrumbs -->
+    <section class="w3l-inner-banner-main">
+        <div class="about-inner services editContent">
+            <div class="container">
+
+                <div class="breadcrumbs-sub">
+                    <ul class="breadcrumbs-custom-path">
+                        <li class="right-side propClone"><a href="index.html" class="editContent">Ana Sayfa <span class="fa fa-angle-right" aria-hidden="true"></span></a> <p></li>
+                        <li class="active editContent">Keşfet</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumbs //-->
+    @Html.Action("PartialHobbies")
+    @Html.Action("PartialGallerry")
+    @Html.Action("PartialFooter","Default")
+
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fa fa-chevron-up"></span>
+    </button>
+    <script>
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function () {
+		scrollFunction()
+	};
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("movetop").style.display = "block";
+		} else {
+			document.getElementById("movetop").style.display = "none";
+		}
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
+    </script>
+    <!-- /move top -->
+
+</body>
+
+</html>

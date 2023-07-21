@@ -1,0 +1,60 @@
+﻿@model  Casgem_CodeFirstProject.DAL.Entities.Booking
+<section class="w3l-call-to-action_9">
+    <div class="call-w3">
+        <div class="container">
+            <div class="booking-form-content">
+                <div class="main-titles-head ">
+                    <h3 class="header-name">
+                       En iyi tatili uzmanlar tarafından planlayın
+                    </h3>
+                    <p class="tiltle-para editContent ">Güzel ve dinlendirici bir tatil için hemen tatili planlayın.</p>
+                </div>
+                <form  method="post" class="booking-form">
+                    <div class="row book-form">
+                        <div class="form-input col-md-4">
+                            <label>Ad Soyad</label>
+                            <input type="text" name="CustomerName" placeholder="Ad Soyad" required="">
+                        </div>
+                        <div class="form-input col-md-4">
+                            <label>Mail</label>
+                            <input type="text" name="Mail" placeholder="Mailiniz" required="">
+                        </div>
+                        <div class="form-input col-md-4">
+                            <label>Nereye</label>
+                            <select name="Destination" class="selectpicker">
+                                <option value="">Any</option>
+                                <option value="İspanya">İspanya</option>
+                                <option value="Amerika">Amerika</option>
+                                <option value="Almanya">Almanya</option>
+                                <option value="Balkanlar">Balkanlar</option>
+                                <option value="Dubai">Dubai</option>
+                                <option value="Güney Amerika">Güney Amerika</option>
+                            </select>
+
+                        </div>
+                        <div class="form-input col-md-4 mt-3">
+
+                            <label>Süre</label>
+                            <select name="Duration" class="selectpicker">
+                                <option value="">Any</option>
+                                <option value="1">1 Gün</option>
+                                <option value="2">2-4 Gün</option>
+                                <option value="5">5-7 Gün</option>
+                                <option value="7">7+ Gün</option>
+                            </select>
+
+                        </div>
+                        <div class="form-input col-md-4 mt-3">
+                            <label>Tarih</label>
+                            <input type="date" name="BookingDate" placeholder="Date" required="">
+                        </div>
+                        <div class="bottom-btn col-md-4 mt-3">
+                            <label>Gönder</label>
+                            <button class="btn btn-style btn-primary w-100 btn-style">Gönder</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

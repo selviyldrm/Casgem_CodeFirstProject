@@ -1,0 +1,52 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!--
+   Author: W3layouts
+   Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+@Html.Action("PartialHead","Default")
+<body id="home">
+    @Html.Action("PartialNavbar", "Default")
+    @Html.Action("PartialSLiderScript", "Default")
+    <!-- breadcrumbs -->
+    @Html.Partial("PartialBreadcrumb")
+    <!-- breadcrumbs //-->
+    <section class="w3l-contact-info-main" id="contact">
+        <div class="contact-sec	editContent">
+            <div class="container">
+                <div class="map-content-9 mb-5 ">
+                    <form method="post">
+                        <div class="twice-two">
+                            <input type="text" class="form-control" name="NameSurname" placeholder="Ad Soyad" required="">
+                            <input type="email" class="form-control" name="Mail" placeholder="Mail" required="">
+                            <input type="text" class="form-control" name="Subject" placeholder="Konu" required="">
+
+                        </div>
+                        <textarea name="Message" class="form-control" placeholder="Mesaj" required=""></textarea>
+
+                        <div class="text-right">
+                            <button type="submit" id="btn1" class="btn btn-contact">Mesaj Gönder</button>
+                        </div>
+                    </form>
+                </div>
+
+
+                @Html.Action("PartialContact", "Contact")
+
+                @Html.Action("PartialFooter", "Default")
+
+                @Html.Action("PartialScript")
+                <script>
+        $('#btn1').click(function () {
+            alert("Mesaj Gönderildi");
+        });
+                </script>
+
+</body>
+
+</html>

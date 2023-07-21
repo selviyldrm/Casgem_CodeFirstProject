@@ -1,0 +1,62 @@
+﻿@model List<Casgem_CodeFirstProject.DAL.Entities.Galerry>
+<section class="w3l-footer-29-main">
+    <div class="footer-29 py-5 ">
+        <div class="container">
+            <div class="grid-col-4 footer-top-29">
+                <div class="footer-list-29 footer-1">
+                    <h2 class="footer-title-29">Bize Ulaşın</h2>
+                    <ul>
+                        <li>
+                            <p>
+                                <span class="fa fa-map-marker"></span>Ankara
+                            </p>
+                        </li>
+                        <li><a href="tel:+7-800-999-800"><span class="fa fa-phone"></span> +(21)-255-999-8888</a></li>
+                        <li><a href="mailto:estate-mail@support.com" class="mail"><span class="fa fa-envelope-open-o"></span> Exterior-mail@support.com</a></li>
+                    </ul>
+                    <div class="main-social-footer-29">
+                        <a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>
+                        <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
+                        <a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
+                        <a href="#google-plus" class="google-plus"><span class="fa fa-google-plus"></span></a>
+                        <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
+                    </div>
+                </div>
+                <div class="footer-list-29 footer-2">
+                    <ul>
+                        <h6 class="footer-title-29">Kategoriler</h6>
+                        <li><a href="#pages">Seyehat Etkinlikleri</a></li>
+                        <li><a href="#pages">Holiday Trip</a></li>
+                        <li><a href="#pages">Grup Turları</a></li>
+                        <li><a href="#pages">Tatil Paketleri</a></li>
+                        <li><a href="#pages">Gap Year</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list-29 footer-3">
+                    <div class="properties">
+                        <h6 class="footer-title-29">Son Resimler</h6>
+                        <div class="images-col">
+                           @foreach (var item in Model)
+                           {
+                            <a href="blog-single.html"><img src="@item.ImageUrl" class="img-responsive" alt=""></a>
+                           }
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-list-29 footer-4">
+                    <ul>
+                        <h6 class="footer-title-29">Gezi ve Seyehatler</h6>
+                        <li><a href="#url">	İspanya</a></li>
+                        <li><a href="#url">	Fransa</a></li>
+                        <li><a href="#url">Mısır</a></li>
+                        <li><a href="#url">	Dubai</a></li>
+                        <li><a href="#url">Portekiz</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class=" bottom-copies text-center">
+                <p class="copy-footer-29">© @DateTime.Now.Year Geziye Git.Tüm hakları saklıdır. | Tasarım <a href="//w3layouts.com">W3layouts</a></p>
+            </div>
+        </div>
+    </div>
+</section>

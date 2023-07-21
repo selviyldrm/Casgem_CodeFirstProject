@@ -1,0 +1,28 @@
+﻿@model List<Casgem_CodeFirstProject.DAL.Entities.Hobbies>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<h2>Hizmet Listesi </h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Başlık</th>
+        <th>Açıklama</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.HobbiesID</td>
+            <td>@item.Title</td>
+            <td>@item.Description</td>
+            <td><a href="/AdminService/DeleteService/@item.HobbiesID" class="btn btn-outline-danger">Sİl</a></td>
+            <td><a href="/AdminService/UpdateService/@item.HobbiesID" class="btn btn-outline-success">Güncelle</a></td>
+        </tr>
+    }
+</table>
+<a href="/AdminService/AddService/" class="btn btn-info">Yeni Hizmet Ekle</a>
